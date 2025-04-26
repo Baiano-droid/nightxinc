@@ -1,0 +1,97 @@
+.parceiros {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden; 
+}
+
+.parceiros h1 {
+    font-size: 40px;
+}
+
+.shalomgames {
+    margin-top: 100px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    animation: moveRight 40s infinite ease-in-out; /* Aumentei o tempo para 40 segundos para movimento mais lento */
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%); /* Começa fora da tela, à esquerda */
+    }
+    25% {
+        transform: translateX(0); /* Acelera até o meio */
+    }
+    50% {
+        transform: translateX(50%); /* Meio do caminho */
+    }
+    75% {
+        transform: translateX(75%); /* Continuando para a direita */
+    }
+    100% {
+        transform: translateX(100%); /* Vai até o final da tela à direita */
+    }
+}
+
+.shalomgames img {
+    width: 200px;
+}
+
+.shalomgames p {
+    font-size: 30px;
+}
+
+.bg-discord-blue {
+    background-color: #5865F2;
+  }
+  .bg-discord-blue-dark {
+    background-color: #4752C4;
+  }
+
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fadeInDown {
+    animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.text-shadow-glow {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Typing animation */
+.typing-animation {
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
